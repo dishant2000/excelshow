@@ -1,0 +1,117 @@
+.main-container{
+ margin:0 50px 0 50px;
+ background-color:#4e3d53 ;
+ font-family: 'Lato',sans-serif;
+}
+
+.main-container .custom-file-input{
+    display: none; 
+}
+.main-container .file-upload-w{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-container .file-upload-w .search-wrapper{
+    
+}
+.main-container .file-upload-w .send-button-wrapper{
+    border: #fa9579 solid 3px;
+    border-radius: 50%;
+}
+.main-container .file-upload-w .send-button-wrapper .send-button{
+    height: 60px;
+    width: 60px;
+    padding:10px;
+    border-radius: 50%;
+    outline: none;
+}
+.main-container .file-upload-w .search-wrapper .seachbar{
+    padding:10px;
+    border-radius: 5px;
+}
+.main-container .file-upload-w .search-wrapper .trash-btn{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(255, 71, 71);
+    color: white;
+    margin-left: 20px;
+}
+.main-container .file-upload-w .actual-file-upload-wrapper{
+    position: static;
+    bottom: 10px;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+    width: 350px;
+    border: 3px solid #fa9579;
+    border-radius: 5px;
+}
+.main-container .file-upload-w .actual-file-upload-wrapper .file-button{
+    margin: 10px;
+    padding: 10px;
+    background-color: #fa9579 ;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+}
+.main-container .file-upload-w .actual-file-upload-wrapper .file-name{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+
+}
+
+/*table desingn*/
+
+.main-container .table-main-wrapper .table-wrapper{
+    width: 100%;
+    margin-top: 21px;
+    table-layout: fixed;
+}
+.main-container .table-main-wrapper .table-wrapper .table-head{
+    background-color: #362F4B;   
+}
+
+.main-container .table-main-wrapper .table-wrapper .table-head tr{
+    color: white;
+    
+}
+.main-container .table-main-wrapper .table-wrapper .table-head tr th{
+  padding: 11px 0;
+  text-align: center;
+  /* padding-left: 50px; */
+}
+.main-container .table-main-wrapper .table-wrapper .table-head tr th span{
+    display: inline-flex;
+    width: 50%;
+}
+.main-container .table-main-wrapper .table-wrapper .table-body{
+   
+}
+
+.main-container .table-main-wrapper .table-wrapper .table-body tr{
+    text-align:center;
+    
+}
+.main-container .table-main-wrapper .table-wrapper .table-body tr td span{
+    display: inline-flex;
+    width: 50%;
+}
+.main-container .table-main-wrapper .table-wrapper .table-body tr:nth-child(even){
+    background-color: #F6F6F6;
+}
+.main-container .table-main-wrapper .table-wrapper .table-body tr:nth-child(odd){
+    background-color: white;
+}
+.main-container .table-main-wrapper .table-wrapper .table-body tr td{
+    padding: 8px;
+}
