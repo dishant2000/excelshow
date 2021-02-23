@@ -5,6 +5,8 @@ import $ from 'jquery';
 import {FaUpload,FaTrashAlt} from 'react-icons/fa'
 import './App.css';
 import './css/index.css';
+
+const MURL = "https://excelshow.herokuapp.com/";
 function App() {
   const iniPStat = {
     loading: false,
@@ -19,7 +21,7 @@ function App() {
   const [data, setData] = useState([]);
   const fetchData = () => {
     setPageState({ ...pageState, loading: true, fetching: true });
-    axios.get('http://localhost:5000/api/show').then((res) => {
+    axios.get('https://excelshow.herokuapp.com/api/show').then((res) => {
       console.log(res);
       setData(res.data);
       setPageState({ ...pageState, fetching: false });
@@ -32,7 +34,7 @@ function App() {
   //serarch
   const searchHandler = (e)=>{
 
-    axios.get(`http://localhost:5000/api/search/${e.target.value}`).then((res)=>{
+    axios.get(`https://excelshow.herokuapp.com/api/search/${e.target.value}`).then((res)=>{
       setData(res.data);
       setPageState({ ...pageState, fetching: false });
       
@@ -44,7 +46,7 @@ function App() {
 
   const updateDatabase = (data) => {
     console.log("my dataArray is", data);
-    axios.post('http://localhost:5000/api/add', { data }).then((res) => {
+    axios.post('https://excelshow.herokuapp.com/api/add', { data }).then((res) => {
       console.log(res);
       fetchData();
       
@@ -93,7 +95,7 @@ function App() {
 
   //delete handler
   const deleteHandler = ()=>{
-    axios.get("http://localhost:5000/api/delete").then((res) => {
+    axios.get("https://excelshow.herokuapp.com/api/delete").then((res) => {
       console.log(res);
       fetchData();
       
